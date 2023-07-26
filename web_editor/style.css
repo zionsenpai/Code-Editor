@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1f1f1f; /* Dark background color */
+  color: #e5e5e5; /* Text color */
+}
+
+header {
+  position: relative;
+  background-color: #292929; /* Dark header background color */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  color: #e5e5e5; /* Header text color */
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.editor {
+  background-color: #2a2a2a; /* Dark editor background color */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.editor h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+  color: #e5e5e5; /* Header text color */
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background-color: #3a3a3a; /* Dark textarea background color */
+  color: #e5e5e5; /* Text color inside the textarea */
+  border: none;
+  margin-bottom: 10px;
+}
+
+textarea::placeholder {
+  color: #9c9c9c;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #292929; /* Dark button background color */
+  color: #e5e5e5; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #3a3a3a; /* Hovered button background color */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#output {
+  margin: 20px;
+}
+
+#output h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e5e5e5; /* Output header text color */
+}
+
+#outputFrame {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #292929; /* Dark output background color */
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#resetButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #3a3a3a; /* Dark reset button background color */
+  color: #e5e5e5; /* Reset button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#resetButton:hover {
+  background-color: #4a4a4a; /* Hovered reset button background color */
+}
+
+#resetButton:active {
+  transform: scale(0.98);
+}

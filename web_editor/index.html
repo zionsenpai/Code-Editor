@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kode Editor</title>
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Inconsolata|Roboto+Mono|Stalinist+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Kode Editor</h1>
+  </header>
+
+  <main>
+    <div class="editor">
+      <h2>HTML</h2>
+      <textarea id="html" placeholder="Enter HTML code here"></textarea>
+      <button class="copy" data-code="html">Copy</button>
+    </div>
+    <div class="editor">
+      <h2>CSS</h2>
+      <textarea id="css" placeholder="Enter CSS code here"></textarea>
+      <button class="copy" data-code="css">Copy</button>
+    </div>
+    <div class="editor">
+      <h2>JS</h2>
+      <textarea id="js" placeholder="Enter JavaScript code here"></textarea>
+      <button class="copy" data-code="js">Copy</button>
+    </div>
+  </main>
+
+  <div id="output">
+    <h2>The Website</h2>
+    <iframe id="outputFrame"></iframe>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <footer>
+    <button id="resetButton">Reset</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
